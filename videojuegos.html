@@ -1,0 +1,83 @@
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GamingZone - Videojuegos</title>
+  <link rel="stylesheet" href="cssstyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">GamingZone</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html" class="active">Tienda</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="reseñas.html">Noticias</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="carrito-icono">
+      <a href="carrito.html">🛒<span id="carrito-contador">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Videojuegos Destacados</h2>
+    <div class="producto-lista">
+      <article class="producto">
+        <div class="imagen-producto"><img src="https://periodismo.ull.es/wp-content/uploads/2022/04/Se-rumorea-que-Elden-Ring-realizara-proximamente-una-nueva-prueba.jpg" alt="Videojuegos" /></div>
+        <h3>Elden Ring</h3>
+        <p>RPG, mundo abierto, acción</p>
+        <span class="precio">$59.99</span>
+        <button class="agregar-carrito" data-id="v1" data-nombre="Elden Ring" data-precio="59.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">[Imagen Call of Duty]</div>
+        <h3>Call of Duty: Modern Warfare</h3>
+        <p>FPS, multijugador</p>
+        <span class="precio">$49.99</span>
+        <button class="agregar-carrito" data-id="v2" data-nombre="Call of Duty: Modern Warfare" data-precio="49.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">[Imagen FIFA 23]</div>
+        <h3>FIFA 25</h3>
+        <p>Deportes, fútbol</p>
+        <span class="precio">$39.99</span>
+        <button class="agregar-carrito" data-id="v3" data-nombre="FIFA 23" data-precio="39.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">[Imagen Mario Kart]</div>
+        <h3>Mario Kart 8 Deluxe</h3>
+        <p>Carreras, multijugador</p>
+        <span class="precio">$49.99</span>
+        <button class="agregar-carrito" data-id="v4" data-nombre="Mario Kart 8 Deluxe" data-precio="49.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">[Imagen Zelda Breath]</div>
+        <h3>The Legend of Zelda: Breath of the Wild</h3>
+        <p>Aventura, mundo abierto</p>
+        <span class="precio">$59.99</span>
+        <button class="agregar-carrito" data-id="v5" data-nombre="The Legend of Zelda: Breath of the Wild" data-precio="59.99">Agregar al carrito</button>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 GamingZone</p>
+      <p><a href="contacto.html">Contáctanos</a> | <a href="#">Síguenos</a></p>
+    </div>
+  </footer>
+
+  <script src="jscarrito.js"></script>
+</body>
+</html>

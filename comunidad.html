@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comunidad - Gaming Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    .forum-section, .rating-section {
+      background-color: #ffffff;
+      padding: 2rem;
+      margin: 1rem auto;
+      border-radius: 10px;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .forum-section h2, .rating-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: #0F172A;
+    }
+
+    .forum-list li {
+      margin: 0.5rem 0;
+    }
+
+    .rating-form input, .rating-form textarea, .forum-form input {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.3rem 0 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .rating-form button, .forum-form button {
+      background-color: #3B82F6;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .rating-form button:hover, .forum-form button:hover {
+      background-color: #2563eb;
+    }
+
+    .review-item, .forum-topic {
+      margin-bottom: 1rem;
+      border-left: 4px solid #3B82F6;
+      padding-left: 1rem;
+    }
+
+    .stars {
+      color: #EF4444;
+    }
+
+    .date {
+      font-size: 0.85rem;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="logo">Gaming Hub</div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="comunidad.html" class="active">Comunidad</a></li>
+        <li><a href="reseñas.html">Reseñas y Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="offers-banner">
+      <h2>Ofertas Especiales</h2>
+      <a href="tienda.html#ofertas" class="offer-link">¡Descubre nuestras ofertas!</a>
+    </section>
+
+    <section class="forum-section">
+      <h2>Temas Recientes</h2>
+      <ul id="forumList" class="forum-list"></ul>
+
+      <form id="forumForm" class="forum-form">
+        <input type="text" id="newTopic" placeholder="Escribe un nuevo tema..." required />
+        <button type="submit">Agregar Tema</button>
+      </form>
+    </section>
+
+    <section class="rating-section">
+      <h2>Valoraciones de Usuarios</h2>
+      <div id="reviewsList"></div>
+
+      <form id="ratingForm" class="rating-form">
+        <input type="text" id="username" placeholder="Tu nombre" required />
+        <input type="text" id="product" placeholder="Producto" required />
+        <textarea id="comment" placeholder="Tu opinión" required></textarea>
+        <input type="number" id="rating" min="1" max="5" placeholder="Puntuación (1 a 5)" required />
+        <button type="submit">Enviar Valoración</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gaming Hub. Todos los derechos reservados.</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="Twitter">TW</a>
+      <a href="#" aria-label="Instagram">IG</a>
+    </div>
+  </footer>
+
+  <script>
+    const forumList = document.getElementById('forumList');
+    const forumForm = document.getElementById('forumForm');
+    const newTopicInput = document.getElementById('newTopic');
+
+    const reviewsList = document.getElementById('reviewsList');
+    const ratingForm = document.getElementById('ratingForm');
+    const usernameInput = document.getElementById('username');
+    const productInput = document.getElementById('product');
+    const commentInput = document.getElementById('comment');
+    const ratingInput = document.getElementById('rating');
+
+    const loadTopics = () => {
+      const topics = JSON.parse(localStorage.getItem('topics')) || [];
+      forumList.innerHTML = '';
+      topics.forEach(topic => {
+        const li = document.createElement('li');
+        li.classList.add('forum-topic');
+        li.textContent = topic;
+        forumList.appendChild(li);
+      });
+    };
+
+    const loadReviews = () => {
+      const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviewsList.innerHTML = '';
+      reviews.forEach(r => {
+        const div = document.createElement('div');
+        div.classList.add('review-item');
+        div.innerHTML = `
+          <strong>${r.username}</strong> valoró <em>${r.product}</em>:
+          <div class="stars">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+          <p>${r.comment}</p>
+          <div class="date">${r.date}</div>
+        `;
+        reviewsList.appendChild(div);
+      });
+    };
+
+    forumForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const topic = newTopicInput.value.trim();
+      if (topic) {
+        const topics = JSON.parse(localStorage.getItem('topics')) || [];
+        topics.unshift(topic);
+        localStorage.setItem('topics', JSON.stringify(topics));
+        loadTopics();
+        newTopicInput.value = '';
+      }
+    });
+
+    ratingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const review = {
+        username: usernameInput.value.trim(),
+        product: productInput.value.trim(),
+        comment: commentInput.value.trim(),
+        rating: parseInt(ratingInput.value),
+        date: new Date().toLocaleDateString()
+      };
+      const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews.unshift(review);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+      loadReviews();
+      usernameInput.value = '';
+      productInput.value = '';
+      commentInput.value = '';
+      ratingInput.value = '';
+    });
+
+    loadTopics();
+    loadReviews();
+  </script>
+</body>
+</html>
+
+

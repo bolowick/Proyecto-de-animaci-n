@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GamingZone - Ofertas</title>
+  <link rel="stylesheet" href="cssstyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">GamingZone</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="reseñas.html">Noticias</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="carrito-icono">
+      <a href="carrito.html">🛒<span id="carrito-contador">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="ofertas">
+      <h2>🔥 Ofertas Especiales</h2>
+      <div class="producto-lista">
+        <article class="producto">
+          <div class="imagen-producto">[Teclado Razer BlackWidow V3]</div>
+          <h3>Teclado Razer BlackWidow V3</h3>
+          <p>Mecánico, RGB, Switches Green</p>
+          <span class="precio">$89.99 <s>$119.99</s></span>
+          <button class="agregar-carrito" data-id="101" data-nombre="Teclado Razer BlackWidow V3" data-precio="89.99">Agregar al carrito</button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-producto">[Combo Logitech]</div>
+          <h3>Combo Gaming Logitech</h3>
+          <p>Mouse + Teclado + Headset</p>
+          <span class="precio">$149.99 <s>$174.99</s></span>
+          <button class="agregar-carrito" data-id="102" data-nombre="Combo Gaming Logitech" data-precio="149.99">Agregar al carrito</button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-producto">[Monitor ASUS 165Hz]</div>
+          <h3>Monitor ASUS TUF Gaming 165Hz</h3>
+          <p>27", 1ms, G-Sync Compatible</p>
+          <span class="precio">$229.00 <s>$289.00</s></span>
+          <button class="agregar-carrito" data-id="103" data-nombre="Monitor ASUS TUF" data-precio="229.00">Agregar al carrito</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 GamingZone</p>
+      <p><a href="contacto.html">Contáctanos</a> | <a href="#">Síguenos</a></p>
+    </div>
+  </footer>
+
+  <script src="jscarrito.js"></script>
+</body>
+</html>
+

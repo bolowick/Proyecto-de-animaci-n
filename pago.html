@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GamingZone - Pago</title>
+  <link rel="stylesheet" href="cssstyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">GamingZone</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="reseñas.html">Noticias</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="carrito-icono">
+      <a href="carrito.html">🛒<span id="carrito-contador">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Pasarela de Pago</h1>
+    <form id="form-pago" novalidate>
+      <label for="nombre">Nombre completo del titular</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="tarjeta">Número de tarjeta</label>
+      <input type="text" id="tarjeta" name="tarjeta" maxlength="16" pattern="\\d{16}" required />
+
+      <label for="fecha">Fecha de vencimiento (MM/AA)</label>
+      <input type="text" id="fecha" name="fecha" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\\/\\d{2}" required />
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" maxlength="3" pattern="\\d{3}" required />
+
+      <fieldset>
+        <legend>Método de pago</legend>
+        <label><input type="radio" name="metodo" value="yappy" checked> Yappy</label>
+        <label><input type="radio" name="metodo" value="credito"> Crédito</label>
+      </fieldset>
+
+      <button type="submit">Pagar</button>
+    </form>
+    <div id="mensaje-pago" class="alerta" role="alert" aria-live="polite"></div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 GamingZone</p>
+      <p><a href="contacto.html">Contáctanos</a> | <a href="#">Síguenos</a></p>
+    </div>
+  </footer>
+
+  <script src="jspago.js"></script>
+</body>
+</html>

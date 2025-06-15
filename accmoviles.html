@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GamingZone - Accesorios Móviles</title>
+  <link rel="stylesheet" href="cssstyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">GamingZone</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html" class="active">Tienda</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="reseñas.html">Noticias</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="carrito-icono">
+      <a href="carrito.html">🛒<span id="carrito-contador">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Accesorios para Móviles</h2>
+    <div class="producto-lista">
+      <article class="producto">
+        <div class="imagen-producto">[Imagen Cargador Rápido]</div>
+        <h3>Cargador Rápido USB-C</h3>
+        <p>Compatible con la mayoría de móviles</p>
+        <span class="precio">$19.99</span>
+        <button class="agregar-carrito" data-id="a1" data-nombre="Cargador Rápido USB-C" data-precio="19.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto"><img src="https://www.bidcom.com.ar/publicacionesML/productos/ABLUE081/1000x1000-ABLUE81N.jpg"/></div>
+        <h3>Auriculares Bluetooth</h3>
+        <p>Cancelación de ruido, 20h batería</p>
+        <span class="precio">$59.99</span>
+        <button class="agregar-carrito" data-id="a2" data-nombre="Auriculares Bluetooth" data-precio="59.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">[Imagen Soporte Móvil]</div>
+        <h3>Soporte para Móvil</h3>
+        <p>Gira 360°, compacto</p>
+        <span class="precio">$12.99</span>
+        <button class="agregar-carrito" data-id="a3" data-nombre="Soporte para Móvil" data-precio="12.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto"></div>
+        <h3>Power Bank 10000mAh</h3>
+        <p>Carga rápida, ligero</p>
+        <span class="precio">$29.99</span>
+        <button class="agregar-carrito" data-id="a4" data-nombre="Power Bank 10000mAh" data-precio="29.99">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">[Imagen Funda Gamer]</div>
+        <h3>Funda Gamer para Móvil</h3>
+        <p>Protección y diseño exclusivo</p>
+        <span class="precio">$14.99</span>
+        <button class="agregar-carrito" data-id="a5" data-nombre="Funda Gamer para Móvil" data-precio="14.99">Agregar al carrito</button>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 GamingZone</p>
+      <p><a href="contacto.html">Contáctanos</a> | <a href="#">Síguenos</a></p>
+    </div>
+  </footer>
+
+  <script src="jscarrito.js"></script>
+</body>
+</html>
+
