@@ -28,8 +28,10 @@ El carrito tiene una simulación de proceso de pago que no realiza transacciones
 - Añade más contenido real o placeholder según necesites.
 
 ## Autor
-jorge Gonzalez
-
+Jorge Gonzalez
+Rolando Aldeano
+Juan Batista 
+Juan camargo
 
 ---
 
