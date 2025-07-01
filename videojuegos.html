@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORION - Videojuegos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-logo">ORION</div>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <h2>Videojuegos Destacados</h2>
+    <div class="producto-lista">
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/Elden Ring.webp" alt="Elden Ring" />
+          <div class="info-producto">
+            <h3>Elden Ring steam</h3>
+            <p>RPG, mundo abierto, acción</p>
+            <span class="precio">$59.99</span>
+            <button class="agregar-carrito" data-id="v1" data-nombre="Elden Ring" data-precio="59.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/CoDMW.webp" alt="Call of Duty: Modern Warfare" />
+          <div class="info-producto">
+            <h3>Call of Duty: Modern Warfare steam</h3>
+            <p>FPS, multijugador</p>
+            <span class="precio">$49.99</span>
+            <button class="agregar-carrito" data-id="v2" data-nombre="Call of Duty: Modern Warfare" data-precio="49.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/FC25.webp" alt="FC 25 PS5" />
+          <div class="info-producto">
+            <h3>FC 25 PS5</h3>
+            <p>Deportes, fútbol</p>
+            <span class="precio">$39.99</span>
+            <button class="agregar-carrito" data-id="v3" data-nombre="FIFA 23" data-precio="39.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/MarioKart8Deluxe.webp" alt="Mario Kart 8 Deluxe Edicion Nintendo Switch" />
+          <div class="info-producto">
+            <h3>Mario Kart 8 Deluxe Edicion Nintendo Switch</h3>
+            <p>Carreras, multijugador</p>
+            <span class="precio">$49.99</span>
+            <button class="agregar-carrito" data-id="v4" data-nombre="Mario Kart 8 Deluxe" data-precio="49.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/TheLegendOfZeldaBoW.webp" alt="The Legend of Zelda: Breath of the Wild" />
+          <div class="info-producto">
+            <h3>The Legend of Zelda: Breath of the Wild</h3>
+            <p>Aventura, mundo abierto</p>
+            <span class="precio">$59.99</span>
+            <button class="agregar-carrito" data-id="v5" data-nombre="The Legend of Zelda: Breath of the Wild" data-precio="59.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes/logo orion.png" alt="GamingZone Logo" style="height:50px;">
+        <h3>ORION</h3>
+        <p>Tu tienda gamer de confianza</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="detalle-noticia.html">Noticias</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><span style="color:#3B82F6;">Email:</span> orion.tienda@gmail.com</p>
+        <p><span style="color:#3B82F6;">Tel:</span> +507 6712-8248</p>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><img src="imagenes/instagram.svg" alt="Instagram" /></a>
+          <a href="#" title="Facebook"><img src="imagenes/facebook.svg" alt="Facebook" /></a>
+          <a href="#" title="Twitter"><img src="imagenes/twitter.svg" alt="Twitter" /></a>
+          <a href="#" title="YouTube"><img src="imagenes/youtube.svg" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ORION. Todos los derechos reservados.</p>
+      <p>Desarrollado por <a href="#">TuNombre</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

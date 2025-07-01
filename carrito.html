@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORION- Carrito</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="main-container" role="main">
+    <h1 class="titulo-carrito">Tu Carrito de Compras</h1>
+    <section id="carrito-productos" class="carrito-productos" aria-live="polite">
+      <!-- Productos agregados dinámicamente aquí -->
+    </section>
+    <section id="carrito-total" class="carrito-total">
+      <h3>Total: <span id="total" class="total-monto">$0.00</span></h3>
+      <button id="btn-pagar" class="btn btn-pagar" disabled>
+        <span>💳</span> Proceder al pago
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes/logo orion.png" alt="GamingZone Logo" style="height:50px;">
+        <h3>ORION</h3>
+        <p>Tu tienda gamer de confianza</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="detalle-noticia.html">Noticias</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><span style="color:#3B82F6;">Email:</span> orion.tienda@gmail.com</p>
+        <p><span style="color:#3B82F6;">Tel:</span> +507 6718-8248</p>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><img src="imagenes/instagram.svg" alt="Instagram" /></a>
+          <a href="#" title="Facebook"><img src="imagenes/facebook.svg" alt="Facebook" /></a>
+          <a href="#" title="Twitter"><img src="imagenes/twitter.svg" alt="Twitter" /></a>
+          <a href="#" title="YouTube"><img src="imagenes/youtube.svg" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ORION. Todos los derechos reservados.</p>
+      <p>Desarrollado por <a href="#">TuNombre</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

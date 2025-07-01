@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comunidad CONSTELACION</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-logo">ORION</div>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section class="banner-comunidad" data-animate>
+      <h1>Bienvenido a la Comunidad CONSTELACION</h1>
+      <p>Comparte tus experiencias, consulta dudas y deja tu huella en la comunidad gamer de ORION.</p>
+      <a href="tienda.html" class="offer-link">¡Descubre nuestras ofertas!</a>
+    </section>
+
+    <section class="foro-section" data-animate>
+      <h2>Temas Recientes</h2>
+      <ul id="foroLista" class="foro-lista"></ul>
+      <form id="foroFormulario" class="foro-formulario">
+        <input type="text" id="nuevoTema" placeholder="Escribe un nuevo tema..." required />
+        <button type="submit">Agregar Tema</button>
+      </form>
+    </section>
+
+    <section class="valoraciones-section" data-animate>
+      <h2>Valoraciones de Usuarios</h2>
+      <div id="valoracionesLista"></div>
+      <form id="valoracionFormulario" class="valoracion-formulario">
+        <input type="text" id="nombreUsuario" placeholder="Tu nombre" required />
+        <input type="text" id="producto" placeholder="Producto" required />
+        <textarea id="comentario" placeholder="Tu opinión" required></textarea>
+        <input type="number" id="puntuacion" min="1" max="5" placeholder="Puntuación (1 a 5)" required />
+        <button type="submit">Enviar Valoración</button>
+      </form>
+    </section>
+
+    <!-- Nueva sección para buscar noticias o reseñas -->
+    <section class="buscador-reseñas" data-animate>
+      <h2>Buscar Noticias o Reseñas</h2>
+      <form id="formularioBusqueda">
+        <input type="text" id="busquedaInput" placeholder="Buscar en reseñas..." required>
+        <button type="submit">Buscar</button>
+      </form>
+      <div id="resultadosBusqueda"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes/logo orion.png" alt="orion Logo" style="height:50px;">
+        <h3>ORION</h3>
+        <p>Tu tienda gamer de confianza</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="detalle-noticia.html">Noticias</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><span style="color:#3B82F6;">Email:</span> orion.tienda@gmail.com</p>
+      <p><span style="color:#3B82F6;">Tel:</span> +507 6712-8248</p>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><img src="imagenes/instagram.svg" alt="Instagram" /></a>
+          <a href="#" title="Facebook"><img src="imagenes/facebook.svg" alt="Facebook" /></a>
+          <a href="#" title="Twitter"><img src="imagenes/twitter.svg" alt="Twitter" /></a>
+          <a href="#" title="YouTube"><img src="imagenes/youtube.svg" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ORION. Todos los derechos reservados.</p>
+      <p>Desarrollado por <a href="#">TuNombre</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Animación scroll para las secciones
+    document.addEventListener("DOMContentLoaded", () => {
+      const animados = document.querySelectorAll('[data-animate]');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      animados.forEach(el => observer.observe(el));
+    });
+
+    // Foro y valoraciones
+    const foroLista = document.getElementById('foroLista');
+    const foroFormulario = document.getElementById('foroFormulario');
+    const nuevoTemaInput = document.getElementById('nuevoTema');
+
+    const valoracionesLista = document.getElementById('valoracionesLista');
+    const valoracionFormulario = document.getElementById('valoracionFormulario');
+    const nombreUsuarioInput = document.getElementById('nombreUsuario');
+    const productoInput = document.getElementById('producto');
+    const comentarioInput = document.getElementById('comentario');
+    const puntuacionInput = document.getElementById('puntuacion');
+
+    const cargarTemas = () => {
+      const temas = JSON.parse(localStorage.getItem('temas')) || [];
+      foroLista.innerHTML = '';
+      temas.forEach(tema => {
+        const li = document.createElement('li');
+        li.classList.add('foro-tema');
+        li.textContent = tema;
+        foroLista.appendChild(li);
+      });
+    };
+
+    const cargarValoraciones = () => {
+      const valoraciones = JSON.parse(localStorage.getItem('valoraciones')) || [];
+      valoracionesLista.innerHTML = '';
+      valoraciones.forEach(v => {
+        const div = document.createElement('div');
+        div.classList.add('valoracion-item');
+        div.innerHTML = `
+          <strong>${v.nombreUsuario}</strong> valoró <em>${v.producto}</em>:
+          <div class="stars">${'★'.repeat(v.puntuacion)}${'☆'.repeat(5 - v.puntuacion)}</div>
+          <p>${v.comentario}</p>
+          <div class="date">${v.fecha}</div>
+        `;
+        valoracionesLista.appendChild(div);
+      });
+    };
+
+    foroFormulario.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const tema = nuevoTemaInput.value.trim();
+      if (tema) {
+        const temas = JSON.parse(localStorage.getItem('temas')) || [];
+        temas.unshift(tema);
+        localStorage.setItem('temas', JSON.stringify(temas));
+        cargarTemas();
+        nuevoTemaInput.value = '';
+      }
+    });
+
+    valoracionFormulario.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const valoracion = {
+        nombreUsuario: nombreUsuarioInput.value.trim(),
+        producto: productoInput.value.trim(),
+        comentario: comentarioInput.value.trim(),
+        puntuacion: parseInt(puntuacionInput.value),
+        fecha: new Date().toLocaleDateString()
+      };
+      const valoraciones = JSON.parse(localStorage.getItem('valoraciones')) || [];
+      valoraciones.unshift(valoracion);
+      localStorage.setItem('valoraciones', JSON.stringify(valoraciones));
+      cargarValoraciones();
+      nombreUsuarioInput.value = '';
+      productoInput.value = '';
+      comentarioInput.value = '';
+      puntuacionInput.value = '';
+    });
+
+    // Búsqueda de noticias o reseñas
+    document.getElementById('formularioBusqueda').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const termino = document.getElementById('busquedaInput').value.toLowerCase();
+      const contenedor = document.getElementById('resultadosBusqueda');
+      contenedor.innerHTML = '<p>Buscando...</p>';
+
+      try {
+        const respuesta = await fetch('detalle-noticia.html');
+        const texto = await respuesta.text();
+        const temp = document.createElement('div');
+        temp.innerHTML = texto;
+
+        // Busca artículos con clase .noticia
+        const articulos = temp.querySelectorAll('article.noticia');
+        const resultados = [];
+
+        articulos.forEach(art => {
+          const titulo = art.querySelector('h2')?.textContent || '';
+          const contenido = art.querySelector('p')?.textContent || '';
+          if (titulo.toLowerCase().includes(termino) || contenido.toLowerCase().includes(termino)) {
+            resultados.push(`
+              <div class="resultado">
+                <h3>${titulo}</h3>
+                <p>${contenido}</p>
+              </div>
+            `);
+          }
+        });
+
+        contenedor.innerHTML = resultados.length
+          ? resultados.join('')
+          : '<p>No se encontraron coincidencias.</p>';
+      } catch (error) {
+        contenedor.innerHTML = '<p>Error al buscar reseñas.</p>';
+        console.error(error);
+      }
+    });
+
+    cargarTemas();
+    cargarValoraciones();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

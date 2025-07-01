@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Cuenta - ORION</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    .cuenta-container {
+      max-width: 400px;
+      margin: 60px auto 0 auto;
+      padding: 32px 24px 28px 24px;
+      border-radius: 18px;
+      background: rgba(24,24,27,0.85);
+      box-shadow: 0 8px 40px #00fff733, 0 2px 12px #0005;
+      backdrop-filter: blur(12px) saturate(160%);
+      border: 1.5px solid #00fff7aa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      animation: crystalIn 1s cubic-bezier(.77,0,.18,1) both;
+    }
+    @keyframes crystalIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(40px);}
+      100% { opacity: 1; transform: scale(1) translateY(0);}
+    }
+    .cuenta-container h2 {
+      color: #00fff7;
+      font-family: 'Orbitron', Arial, sans-serif;
+      margin-bottom: 18px;
+      text-shadow: 0 0 8px #3B82F6;
+      letter-spacing: 2px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .user-info {
+      width: 100%;
+      margin-bottom: 18px;
+    }
+    .user-info p {
+      margin: 12px 0;
+      font-size: 1.08em;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .user-info .material-symbols-outlined {
+      color: #00fff7;
+      font-size: 1.3em;
+      vertical-align: middle;
+    }
+    .cuenta-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .cuenta-actions button {
+      background: linear-gradient(90deg, #00fff7 0%, #3B82F6 100%);
+      color: #18181b;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 18px;
+      font-size: 1em;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 0 12px #00fff7aa;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+    .cuenta-actions button:hover {
+      background: linear-gradient(90deg, #ff00cc 0%, #00fff7 100%);
+      color: #fff;
+      transform: scale(1.03);
+    }
+    .user-extra {
+      margin-top: 18px;
+      width: 100%;
+      background: rgba(35,35,43,0.7);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: #b3eaff;
+      font-size: 0.98em;
+      box-shadow: 0 0 8px #00fff733;
+    }
+    @media (max-width: 500px) {
+      .cuenta-container {
+        max-width: 98vw;
+        padding: 16px 2vw;
+      }
+      .cuenta-container h2 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <div class="cuenta-container">
+    <h2><span class="material-symbols-outlined" style="font-size:1.2em;vertical-align:middle;">account_circle</span> Mi Cuenta</h2>
+    <div class="user-info">
+      <p><span class="material-symbols-outlined">person</span><strong>Usuario:</strong> admin</p>
+      <p><span class="material-symbols-outlined">mail</span><strong>Correo:</strong> admin@ejemplo.com</p>
+      <p><span class="material-symbols-outlined">calendar_month</span><strong>Miembro desde:</strong> 2024</p>
+      <p><span class="material-symbols-outlined">verified_user</span><strong>Estado:</strong> Activo</p>
+    </div>
+    <div class="cuenta-actions">
+      <button type="button"><span class="material-symbols-outlined" style="vertical-align:middle;">edit</span> Editar</button>
+      <button type="button"><span class="material-symbols-outlined" style="vertical-align:middle;">logout</span> Cerrar sesión</button>
+    </div>
+    <div class="user-extra">
+      <strong>Última actividad:</strong> 1 de julio de 2025<br>
+      <strong>Pedidos recientes:</strong> <a href="#" style="color:#00fff7;">Ver historial</a>
+    </div>
+  </div>
+  <script>
+    // Mostrar el nombre del usuario logueado junto al icono
+    const nombre = localStorage.getItem('usuarioLogueado');
+    if(nombre) {
+      document.getElementById('nombre-usuario').textContent = nombre;
+    }
+  </script>
+</body>
+</html>

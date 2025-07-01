@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Celulares y Tablets | GamingZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-logo">ORION</div>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <div class="producto-lista">
+
+      <!-- Apple -->
+      <h2 class="marca-title">Apple</h2>
+      <div class="marca-section">
+        <!-- Todos los productos Apple aquí -->
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPhone 16.webp" alt="iPhone 16">
+            <div class="info-producto">
+              <h3>iPhone 16</h3>
+              <p>Pantalla 6.1", A18 Bionic, Dynamic Island, 5G</p>
+              <span class="precio">$999.00</span>
+              <button class="agregar-carrito" data-id="apple-16" data-nombre="iPhone 16" data-precio="999.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPhone 16 Pro.webp" alt="iPhone 16 Pro">
+            <div class="info-producto">
+              <h3>iPhone 16 Pro</h3>
+              <p>Pantalla 6.1", A18 Pro, ProMotion, 5G</p>
+              <span class="precio">$1199.00</span>
+              <button class="agregar-carrito" data-id="apple-16pro" data-nombre="iPhone 16 Pro" data-precio="1199.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPhone 16 Pro Max.webp" alt="iPhone 16 Pro Max">
+            <div class="info-producto">
+              <h3>iPhone 16 Pro Max</h3>
+              <p>Pantalla 6.7", A18 Pro, ProMotion, 5G</p>
+              <span class="precio">$1399.00</span>
+              <button class="agregar-carrito" data-id="apple-16promax" data-nombre="iPhone 16 Pro Max" data-precio="1399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPhone 15 Pro Max.webp" alt="iPhone 15 Pro Max">
+            <div class="info-producto">
+              <h3>iPhone 15 Pro Max</h3>
+              <p>Pantalla 6.7", A17 Pro, Dynamic Island, 5G</p>
+              <span class="precio">$1299.00</span>
+              <button class="agregar-carrito" data-id="apple-15promax" data-nombre="iPhone 15 Pro Max" data-precio="1299.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPhone 15.webp" alt="iPhone 15">
+            <div class="info-producto">
+              <h3>iPhone 15</h3>
+              <p>Pantalla 6.1", A16 Bionic, 5G</p>
+              <span class="precio">$899.00</span>
+              <button class="agregar-carrito" data-id="apple-15" data-nombre="iPhone 15" data-precio="899.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPad Pro 2024.jpg" alt="iPad Pro 2024">
+            <div class="info-producto">
+              <h3>iPad Pro 2024</h3>
+              <p>M4, 13", Liquid Retina XDR, Face ID</p>
+              <span class="precio">$1199.00</span>
+              <button class="agregar-carrito" data-id="ipad-pro-2024" data-nombre="iPad Pro 2024" data-precio="1199.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPad Air 2024.jpg" alt="iPad Air 2024">
+            <div class="info-producto">
+              <h3>iPad Air 2024</h3>
+              <p>M2, 11", Touch ID, Wi-Fi 6E</p>
+              <span class="precio">$799.00</span>
+              <button class="agregar-carrito" data-id="ipad-air-2024" data-nombre="iPad Air 2024" data-precio="799.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPad mini 7.webp" alt="iPad mini 7">
+            <div class="info-producto">
+              <h3>iPad mini 7</h3>
+              <p>8.3", Chip A17, Touch ID, USB-C</p>
+              <span class="precio">$599.00</span>
+              <button class="agregar-carrito" data-id="ipad-mini-7" data-nombre="iPad mini 7" data-precio="599.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/iPad 10 Gen.webp" alt="iPad 10 Gen">
+            <div class="info-producto">
+              <h3>iPad 10 Gen</h3>
+              <p>10.9", Chip A14, USB-C</p>
+              <span class="precio">$449.00</span>
+              <button class="agregar-carrito" data-id="ipad-10-gen" data-nombre="iPad 10 Gen" data-precio="449.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Samsung -->
+      <h2 class="marca-title">Samsung</h2>
+      <div class="marca-section">
+        <!-- Todos los productos Samsung aquí -->
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Galaxy S24 Ultra.avif" alt="Galaxy S24 Ultra">
+            <div class="info-producto">
+              <h3>Galaxy S24 Ultra</h3>
+              <p>6.8", Snapdragon 8 Gen 3, 200MP, S Pen</p>
+              <span class="precio">$1199.00</span>
+              <button class="agregar-carrito" data-id="samsung-s24-ultra" data-nombre="Galaxy S24 Ultra" data-precio="1199.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Galaxy S24.jpg" alt="Galaxy S24">
+            <div class="info-producto">
+              <h3>Galaxy S24</h3>
+              <p>6.2", Exynos 2400, 50MP, 5G</p>
+              <span class="precio">$899.00</span>
+              <button class="agregar-carrito" data-id="samsung-s24" data-nombre="Galaxy S24" data-precio="899.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Galaxy Tab S9 Ultra.webp" alt="Galaxy Tab S9 Ultra">
+            <div class="info-producto">
+              <h3>Galaxy Tab S9 Ultra</h3>
+              <p>14.6", Snapdragon 8 Gen 2, AMOLED</p>
+              <span class="precio">$999.00</span>
+              <button class="agregar-carrito" data-id="samsung-tab-s9-ultra" data-nombre="Galaxy Tab S9 Ultra" data-precio="999.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Galaxy A26.jpg" alt="Galaxy A26">
+            <div class="info-producto">
+              <h3>Galaxy A26</h3>
+              <p>6.5", Exynos, Triple cámara</p>
+              <span class="precio">$299.00</span>
+              <button class="agregar-carrito" data-id="samsung-a26" data-nombre="Galaxy A26" data-precio="299.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Galaxy A36.png" alt="Galaxy A36">
+            <div class="info-producto">
+              <h3>Galaxy A36</h3>
+              <p>6.6", Snapdragon, 5G</p>
+              <span class="precio">$349.00</span>
+              <button class="agregar-carrito" data-id="samsung-a36" data-nombre="Galaxy A36" data-precio="349.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Galaxy A56.webp" alt="Galaxy A56">
+            <div class="info-producto">
+              <h3>Galaxy A56</h3>
+              <p>6.7", Snapdragon, 5G, 108MP</p>
+              <span class="precio">$399.00</span>
+              <button class="agregar-carrito" data-id="samsung-a56" data-nombre="Galaxy A56" data-precio="399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Xiaomi -->
+      <h2 class="marca-title">Xiaomi</h2>
+      <div class="marca-section">
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Xiaomi 14 Ultra.webp" alt="Xiaomi 14 Ultra">
+            <div class="info-producto">
+              <h3>Xiaomi 14 Ultra</h3>
+              <p>6.73", Snapdragon 8 Gen 3, Leica Camera</p>
+              <span class="precio">$1099.00</span>
+              <button class="agregar-carrito" data-id="xiaomi-14-ultra" data-nombre="Xiaomi 14 Ultra" data-precio="1099.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Xiaomi Pad 6.jpg" alt="Xiaomi Pad 6">
+            <div class="info-producto">
+              <h3>Xiaomi Pad 6</h3>
+              <p>11", Snapdragon 870, 144Hz</p>
+              <span class="precio">$399.00</span>
+              <button class="agregar-carrito" data-id="xiaomi-pad-6" data-nombre="Xiaomi Pad 6" data-precio="399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Xiaomi 14.webp" alt="Xiaomi 14">
+            <div class="info-producto">
+              <h3>Xiaomi 14</h3>
+              <p>6.36", Snapdragon 8 Gen 3, 120Hz, Leica Camera</p>
+              <span class="precio">$899.00</span>
+              <button class="agregar-carrito" data-id="xiaomi-14" data-nombre="Xiaomi 14" data-precio="899.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Xiaomi 13T Pro.webp" alt="Xiaomi 13T Pro">
+            <div class="info-producto">
+              <h3>Xiaomi 13T Pro</h3>
+              <p>6.67", Dimensity 9200+, 144Hz, 120W carga</p>
+              <span class="precio">$749.00</span>
+              <button class="agregar-carrito" data-id="xiaomi-13t-pro" data-nombre="Xiaomi 13T Pro" data-precio="749.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Xiaomi 13 Lite.jpg" alt="Xiaomi 13 Lite">
+            <div class="info-producto">
+              <h3>Xiaomi 13 Lite</h3>
+              <p>6.55", Snapdragon 7 Gen 1, 120Hz</p>
+              <span class="precio">$499.00</span>
+              <button class="agregar-carrito" data-id="xiaomi-13-lite" data-nombre="Xiaomi 13 Lite" data-precio="499.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Xiaomi 12.jpeg" alt="Xiaomi 12">
+            <div class="info-producto">
+              <h3>Xiaomi 12</h3>
+              <p>6.28", Snapdragon 8 Gen 1, 120Hz</p>
+              <span class="precio">$599.00</span>
+              <button class="agregar-carrito" data-id="xiaomi-12" data-nombre="Xiaomi 12" data-precio="599.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Xiaomi Pad 5.jpeg" alt="Xiaomi Pad 5">
+            <div class="info-producto">
+              <h3>Xiaomi Pad 5</h3>
+              <p>11", Snapdragon 860, 120Hz</p>
+              <span class="precio">$349.00</span>
+              <button class="agregar-carrito" data-id="xiaomi-pad-5" data-nombre="Xiaomi Pad 5" data-precio="349.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Redmi -->
+      <h2 class="marca-title">Redmi</h2>
+      <div class="marca-section">
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Redmi Note 13.jpg" alt="Redmi Note 13">
+            <div class="info-producto">
+              <h3>Redmi Note 13</h3>
+              <p>6.67", Snapdragon 685, 120Hz, 5000mAh</p>
+              <span class="precio">$249.00</span>
+              <button class="agregar-carrito" data-id="redmi-note-13" data-nombre="Redmi Note 13" data-precio="249.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Redmi Note 13 Pro.webp" alt="Redmi Note 13 Pro">
+            <div class="info-producto">
+              <h3>Redmi Note 13 Pro</h3>
+              <p>6.67", Snapdragon 7s Gen 2, 200MP, 5100mAh</p>
+              <span class="precio">$349.00</span>
+              <button class="agregar-carrito" data-id="redmi-note-13-pro" data-nombre="Redmi Note 13 Pro" data-precio="349.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Redmi Note 13 Pro Plus.jpg" alt="Redmi Note 13 Pro Plus">
+            <div class="info-producto">
+              <h3>Redmi Note 13 Pro Plus</h3>
+              <p>6.67", Dimensity 7200-Ultra, 200MP, 5000mAh, carga rápida</p>
+              <span class="precio">$399.00</span>
+              <button class="agregar-carrito" data-id="redmi-note-13-pro-plus" data-nombre="Redmi Note 13 Pro Plus" data-precio="399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Redmi Note 14.jpg" alt="Redmi Note 14">
+            <div class="info-producto">
+              <h3>Redmi Note 14</h3>
+              <p>6.7", Snapdragon, 108MP</p>
+              <span class="precio">$299.00</span>
+              <button class="agregar-carrito" data-id="redmi-note-14" data-nombre="Redmi Note 14" data-precio="299.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Redmi Note 14 Pro.webp" alt="Redmi Note 14 Pro">
+            <div class="info-producto">
+              <h3>Redmi Note 14 Pro</h3>
+              <p>6.7", Snapdragon, 200MP</p>
+              <span class="precio">$399.00</span>
+              <button class="agregar-carrito" data-id="redmi-note-14-pro" data-nombre="Redmi Note 14 Pro" data-precio="399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Redmi Note 14 Pro Plus.webp" alt="Redmi Note 14 Pro Plus">
+            <div class="info-producto">
+              <h3>Redmi Note 14 Pro Plus</h3>
+              <p>6.7", Snapdragon, 200MP, carga rápida</p>
+              <span class="precio">$449.00</span>
+              <button class="agregar-carrito" data-id="redmi-note-14-pro-plus" data-nombre="Redmi Note 14 Pro Plus" data-precio="449.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- POCO -->
+      <h2 class="marca-title">POCO</h2>
+      <div class="marca-section">
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO X7.webp" alt="POCO X7">
+            <div class="info-producto">
+              <h3>POCO X7</h3>
+              <p>6.67", Snapdragon, 120Hz</p>
+              <span class="precio">$299.00</span>
+              <button class="agregar-carrito" data-id="poco-x7" data-nombre="POCO X7" data-precio="299.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO X7 Pro 5G.webp" alt="POCO X7 Pro 5G">
+            <div class="info-producto">
+              <h3>POCO X7 Pro 5G</h3>
+              <p>6.67", Snapdragon, 5G, 120Hz</p>
+              <span class="precio">$349.00</span>
+              <button class="agregar-carrito" data-id="poco-x7-pro-5g" data-nombre="POCO X7 Pro 5G" data-precio="349.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO F6.jpeg" alt="POCO F6">
+            <div class="info-producto">
+              <h3>POCO F6</h3>
+              <p>6.67", Snapdragon 8 Gen 2, 120Hz</p>
+              <span class="precio">$399.00</span>
+              <button class="agregar-carrito" data-id="poco-f6" data-nombre="POCO F6" data-precio="399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO F6 Pro.jpeg" alt="POCO F6 Pro">
+            <div class="info-producto">
+              <h3>POCO F6 Pro</h3>
+              <p>6.67", Snapdragon 8 Gen 2, 120Hz</p>
+              <span class="precio">$499.00</span>
+              <button class="agregar-carrito" data-id="poco-f6-pro" data-nombre="POCO F6 Pro" data-precio="499.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO F7.jpg" alt="POCO F7">
+            <div class="info-producto">
+              <h3>POCO F7</h3>
+              <p>6.67", Snapdragon 8 Gen 3, 120Hz</p>
+              <span class="precio">$549.00</span>
+              <button class="agregar-carrito" data-id="poco-f7" data-nombre="POCO F7" data-precio="549.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO F7 Pro.webp" alt="POCO F7 Pro">
+            <div class="info-producto">
+              <h3>POCO F7 Pro</h3>
+              <p>6.67", Snapdragon 8 Gen 3, 120Hz, 5G</p>
+              <span class="precio">$599.00</span>
+              <button class="agregar-carrito" data-id="poco-f7-pro" data-nombre="POCO F7 Pro" data-precio="599.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO F7 Ultra.webp" alt="POCO F7 Ultra">
+            <div class="info-producto">
+              <h3>POCO F7 Ultra</h3>
+              <p>6.74", Snapdragon 8 Gen 3, 144Hz, 5000mAh, 5G</p>
+              <span class="precio">$699.00</span>
+              <button class="agregar-carrito" data-id="poco-f7-ultra" data-nombre="POCO F7 Ultra" data-precio="699.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO X6.jpg" alt="POCO X6">
+            <div class="info-producto">
+              <h3>POCO X6</h3>
+              <p>6.67", Snapdragon, 120Hz</p>
+              <span class="precio">$329.00</span>
+              <button class="agregar-carrito" data-id="poco-x6" data-nombre="POCO X6" data-precio="329.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/POCO X6 Pro 5G.jpeg" alt="POCO X6 Pro 5G">
+            <div class="info-producto">
+              <h3>POCO X6 Pro 5G</h3>
+              <p>6.67", Snapdragon, 5G, 120Hz</p>
+              <span class="precio">$379.00</span>
+              <button class="agregar-carrito" data-id="poco-x6-pro-5g" data-nombre="POCO X6 Pro 5G" data-precio="379.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Honor -->
+      <h2 class="marca-title">Honor</h2>
+      <div class="marca-section">
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Honor Magic 6 Pro.webp" alt="Honor Magic 6 Pro">
+            <div class="info-producto">
+              <h3>Honor Magic 6 Pro</h3>
+              <p>6.8", Snapdragon 8 Gen 3, 180MP</p>
+              <span class="precio">$999.00</span>
+              <button class="agregar-carrito" data-id="honor-magic-6-pro" data-nombre="Honor Magic 6 Pro" data-precio="999.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Honor 200 Pro.webp" alt="Honor 200 Pro">
+            <div class="info-producto">
+              <h3>Honor 200 Pro</h3>
+              <p>6.78", Snapdragon 8s Gen 3, 50MP, 5200mAh</p>
+              <span class="precio">$799.00</span>
+              <button class="agregar-carrito" data-id="honor-200-pro" data-nombre="Honor 200 Pro" data-precio="799.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Honor 200.jpg" alt="Honor 200">
+            <div class="info-producto">
+              <h3>Honor 200</h3>
+              <p>6.7", Snapdragon 7 Gen 3, 50MP, 5200mAh</p>
+              <span class="precio">$649.00</span>
+              <button class="agregar-carrito" data-id="honor-200" data-nombre="Honor 200" data-precio="649.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Honor X7b.jpg" alt="Honor X7b">
+            <div class="info-producto">
+              <h3>Honor X7b</h3>
+              <p>6.8", Snapdragon 680, 6000mAh, 108MP</p>
+              <span class="precio">$249.00</span>
+              <button class="agregar-carrito" data-id="honor-x7b" data-nombre="Honor X7b" data-precio="249.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Honor 90 Smart.jpg" alt="Honor 90 Smart">
+            <div class="info-producto">
+              <h3>Honor 90 Smart</h3>
+              <p>6.8", MediaTek Dimensity 6020, 108MP, 5330mAh</p>
+              <span class="precio">$299.00</span>
+              <button class="agregar-carrito" data-id="honor-90-smart" data-nombre="Honor 90 Smart" data-precio="299.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Vivo -->
+      <h2 class="marca-title">Vivo</h2>
+      <div class="marca-section">
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Vivo X100 Pro.jpg" alt="Vivo X100 Pro">
+            <div class="info-producto">
+              <h3>Vivo X100 Pro</h3>
+              <p>6.78", Dimensity 9300, Zeiss Camera</p>
+              <span class="precio">$899.00</span>
+              <button class="agregar-carrito" data-id="vivo-x100-pro" data-nombre="Vivo X100 Pro" data-precio="899.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Vivo V30.jpg" alt="Vivo V30">
+            <div class="info-producto">
+              <h3>Vivo V30</h3>
+              <p>6.78", Snapdragon 7 Gen 3, 5000mAh</p>
+              <span class="precio">$499.00</span>
+              <button class="agregar-carrito" data-id="vivo-v30" data-nombre="Vivo V30" data-precio="499.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Vivo Y100.webp" alt="Vivo Y100">
+            <div class="info-producto">
+              <h3>Vivo Y100</h3>
+              <p>6.67", Snapdragon 685, 80W carga, 5000mAh</p>
+              <span class="precio">$299.00</span>
+              <button class="agregar-carrito" data-id="vivo-y100" data-nombre="Vivo Y100" data-precio="299.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Vivo V29.jpg" alt="Vivo V29">
+            <div class="info-producto">
+              <h3>Vivo V29</h3>
+              <p>6.78", Snapdragon 778G, 4600mAh, 120Hz</p>
+              <span class="precio">$399.00</span>
+              <button class="agregar-carrito" data-id="vivo-v29" data-nombre="Vivo V29" data-precio="399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Vivo Y28.jpg" alt="Vivo Y28">
+            <div class="info-producto">
+              <h3>Vivo Y28</h3>
+              <p>6.68", Helio G85, 6000mAh, 90Hz</p>
+              <span class="precio">$199.00</span>
+              <button class="agregar-carrito" data-id="vivo-y28" data-nombre="Vivo Y28" data-precio="199.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Vivo Y03.jpg" alt="Vivo Y03">
+            <div class="info-producto">
+              <h3>Vivo Y03</h3>
+              <p>6.56", Helio G85, 5000mAh, 90Hz</p>
+              <span class="precio">$149.00</span>
+              <button class="agregar-carrito" data-id="vivo-y03" data-nombre="Vivo Y03" data-precio="149.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Realme -->
+      <h2 class="marca-title">Realme</h2>
+      <div class="marca-section">
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+">
+            <div class="info-producto">
+              <h3>Realme 12 Pro+</h3>
+              <p>6.7", Snapdragon 6 Gen 1, 120Hz, 5000mAh</p>
+              <span class="precio">$399.00</span>
+              <button class="agregar-carrito" data-id="realme-12-pro" data-nombre="Realme 12 Pro" data-precio="399.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Realme 11 Pro+.webp" alt="Realme 11 Pro+">
+            <div class="info-producto">
+              <h3>Realme 11 Pro+</h3>
+              <p>6.7", Dimensity 7050, 200MP, 5000mAh</p>
+              <span class="precio">$449.00</span>
+              <button class="agregar-carrito" data-id="realme-11-pro-plus" data-nombre="Realme 11 Pro+" data-precio="449.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Realme 11.webp" alt="Realme 11">
+            <div class="info-producto">
+              <h3>Realme 11</h3>
+              <p>6.4", Helio G99, 90Hz, 5000mAh</p>
+              <span class="precio">$249.00</span>
+              <button class="agregar-carrito" data-id="realme-11" data-nombre="Realme 11" data-precio="249.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Realme C67.jpg" alt="Realme C67">
+            <div class="info-producto">
+              <h3>Realme C67</h3>
+              <p>6.72", Snapdragon 685, 108MP, 5000mAh</p>
+              <span class="precio">$199.00</span>
+              <button class="agregar-carrito" data-id="realme-c67" data-nombre="Realme C67" data-precio="199.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Red Magic -->
+      <h2 class="marca-title">Red Magic</h2>
+      <div class="marca-section">
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Red Magic 9 Pro.jpg" alt="Red Magic 9 Pro">
+            <div class="info-producto">
+              <h3>Red Magic 9 Pro</h3>
+              <p>6.8", Snapdragon 8 Gen 3, 165Hz, Gaming</p>
+              <span class="precio">$799.00</span>
+              <button class="agregar-carrito" data-id="red-magic-9-pro" data-nombre="Red Magic 9 Pro" data-precio="799.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Red Magic 9S Pro.jpg" alt="Red Magic 9S Pro">
+            <div class="info-producto">
+              <h3>Red Magic 9S Pro</h3>
+              <p>6.8", Snapdragon 8 Gen 3 Leading Version, 165Hz, 6500mAh</p>
+              <span class="precio">$899.00</span>
+              <button class="agregar-carrito" data-id="red-magic-9s-pro" data-nombre="Red Magic 9S Pro" data-precio="899.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Red Magic 10.png" alt="Red Magic 10">
+            <div class="info-producto">
+              <h3>Red Magic 10</h3>
+              <p>6.8", Snapdragon 8 Gen 3, 165Hz, Gaming</p>
+              <span class="precio">$849.00</span>
+              <button class="agregar-carrito" data-id="red-magic-10" data-nombre="Red Magic 10" data-precio="849.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Red Magic 10 Pro.jpeg" alt="Red Magic 10 Pro">
+            <div class="info-producto">
+              <h3>Red Magic 10 Pro</h3>
+              <p>6.8", Snapdragon 8 Gen 3, 165Hz, 6500mAh</p>
+              <span class="precio">$949.00</span>
+              <button class="agregar-carrito" data-id="red-magic-10-pro" data-nombre="Red Magic 10 Pro" data-precio="949.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Red Magic 10S Pro.webp" alt="Red Magic 10S Pro">
+            <div class="info-producto">
+              <h3>Red Magic 10S Pro</h3>
+              <p>6.8", Snapdragon 8 Gen 3+, 165Hz, 6500mAh</p>
+              <span class="precio">$999.00</span>
+              <button class="agregar-carrito" data-id="red-magic-10s-pro" data-nombre="Red Magic 10S Pro" data-precio="999.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Red Magic Tablet.jpeg" alt="Red Magic Tablet">
+            <div class="info-producto">
+              <h3>Red Magic Tablet</h3>
+              <p>12.1", Snapdragon 8+, 144Hz, 10000mAh</p>
+              <span class="precio">$699.00</span>
+              <button class="agregar-carrito" data-id="red-magic-tablet" data-nombre="Red Magic Tablet" data-precio="699.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes/logo orion.png" alt="GamingZone Logo" style="height:50px;">
+        <h3>ORION</h3>
+        <p>Tu tienda gamer de confianza</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="moviles.html">Móviles</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="detalle-noticia.html">Noticias</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><span style="color:#3B82F6;">Email:</span> orion.tienda@gmail.com</p>
+        <p><span style="color:#3B82F6;">Tel:</span> +507 6712-8248</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ORION. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORION- PC Gaming</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-logo">ORION</div>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="main-container">
+    <h2 class="titulo-tienda">Hardware para PC Gaming</h2>
+    <section class="productos">
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/NVIDIA RTX 4080.jpg" alt="NVIDIA RTX 4080"/>
+          <div class="info-producto">
+            <h3>ASUS TUF Gaming NVIDIA GeForce RTX™ 4080 Super OC Edition</h3>
+            <p>Tarjeta gráfica para juegos (PCIe 4.0, 16 GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)</p>
+            <span class="precio">$1299.00</span>
+            <button class="agregar-carrito" data-id="p1" data-nombre="NVIDIA RTX 4080" data-precio="1199.00">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/ssd samsung.jpg" alt="SSD Samsung 1TB"/>
+          <div class="info-producto">
+            <h3>SAMSUNG 870 EVO 1TB</h3>
+            <p>NVMe, Alta velocidad</p>
+            <span class="precio">$99.99</span>
+            <button class="agregar-carrito" data-id="p2" data-nombre="SSD Samsung 1TB" data-precio="149.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/CORSAIR VENGEANCE LPX.jpg" alt="Memoria RAM Corsair 32GB"/>
+          <div class="info-producto">
+            <h3>Memoria Ram CORSAIR VENGEANCE LPX</h3>
+            <p>DDR4 RAM 32 GB (2 x 16 GB) 3200 MHz CL16-20-20-38 1.35V Intel AMD Memoria de computadora de escritorio - Negro</p>
+            <span class="precio">$199.99</span>
+            <button class="agregar-carrito" data-id="p3" data-nombre="Memoria RAM Corsair 32GB" data-precio="199.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/ASUS ROG Strix.jpg" alt="Placa Madre ASUS ROG"/>
+          <div class="info-producto">
+            <h3>Placa ASUS ROG Strix B650-A Gaming</h3>
+            <p>WiFi 6E AM5 (LGA1718) Placa base Ryzen 7000 (12+2 etapas de potencia, ranuras DDR5, 3xM.2, PCIe® 4.0, LAN 2.5G, WiFi 6E, puerto USB 3.2 Gen 2x2 Type-C®)</p>
+            <span class="precio">$219.99</span>
+            <button class="agregar-carrito" data-id="p4" data-nombre="Placa Madre ASUS ROG" data-precio="299.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/Asus thor.jpg" alt="Fuente de Poder PLATINUM II EVA EDITION"/>
+          <div class="info-producto">
+            <h3>ASUS ROG THOR 1000W PLATINUM II EVA EDITION</h3>
+            <p>FUENTE DE PODER DE 1000W / 80 PLUS PLATINUM CERTIFICADO LAMBDA A++ / PANEL OLED / LUCESARGB</p>
+            <span class="precio">$449.91</span>
+            <button class="agregar-carrito" data-id="p5" data-nombre="Fuente de Poder PLATINUM II EVA EDITION" data-precio="449.91">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/kcas.png" alt="Fuente de Poder DE 700W"/>
+          <div class="info-producto">
+            <h3>Fuente de Poder AEROCOOL KCAS / FUENTE DE PODER DE 700W</h3>
+            <p>80+ BRONZE</p>
+            <span class="precio">$50.87</span>
+            <button class="agregar-carrito" data-id="p6" data-nombre="Fuente de Poder DE 700W" data-precio="50.87">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/samsung m2.jpg" alt="SAMSUNG 990 EVO Plus"/>
+          <div class="info-producto">
+            <h3>SAMSUNG 990 EVO Plus</h3>
+            <p>SSD de 1TB, PCIe Gen 4x4 y 5x2 M.2 2280, velocidades de hasta 7250 MB/s</p>
+            <span class="precio">$129.99</span>
+            <button class="agregar-carrito" data-id="p7" data-nombre="SAMSUNG 990 EVO Plus" data-precio="129.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/Seagate BarraCuda.jpg" alt="Seagate BarraCuda"/>
+          <div class="info-producto">
+            <h3>Seagate BarraCuda</h3>
+            <p>Disco duro interno de 8 TB – 3.5 pulgadas SATA 6 Gb/s 5400 RPM 256MB caché para computadora de escritorio</p>
+            <span class="precio">$131.18</span>
+            <button class="agregar-carrito" data-id="p8" data-nombre="Seagate BarraCuda" data-precio="131.18">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/Teamgroup T-Force Vulcan.jpg" alt="Teamgroup T-Force Vulcan"/>
+          <div class="info-producto">
+            <h3>Teamgroup T-Force Vulcan</h3>
+            <p>DDR5 32 GB (2 x 16 GB) 6000 MHz (PC5-48000) CL38 Intel XMP 3.0 y AMD Expo Módulo de memoria de escritorio compatible Ram Red</p>
+            <span class="precio">$29.99</span>
+            <button class="agregar-carrito" data-id="p9" data-nombre="Teamgroup T-Force Vulcan" data-precio="29.99">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/Intel Core i9-13900K.jpg" alt="Intel Core i9-13900K"/>
+          <div class="info-producto">
+            <h3>Intel Core i9-13900K</h3>
+            <p>Procesador de escritorio 24 (8 núcleos P + 16 núcleos E) con gráficos integrados - desbloqueado</p>
+            <span class="precio">$444.00</span>
+            <button class="agregar-carrito" data-id="p10" data-nombre="Intel Core i9-13900K" data-precio="444.00">Agregar al carrito</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes/logo orion.png" alt="orion Logo" style="height:50px;">
+        <h3>ORION</h3>
+        <p>Tu tienda gamer de confianza</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="detalle-noticia.html">Noticias</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><span style="color:#3B82F6;">Email:</span> orion.tienda@gmail.com</p>
+        <p><span style="color:#3B82F6;">Tel:</span> +507 6712-8248</p>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><img src="imagenes/instagram.svg" alt="Instagram" /></a>
+          <a href="#" title="Facebook"><img src="imagenes/facebook.svg" alt="Facebook" /></a>
+          <a href="#" title="Twitter"><img src="imagenes/twitter.svg" alt="Twitter" /></a>
+          <a href="#" title="YouTube"><img src="imagenes/youtube.svg" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; ORION . Todos los derechos reservados.</p>
+      <p>Desarrollado por <a href="#">TuNombre</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

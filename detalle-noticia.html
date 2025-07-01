@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noticias Gaming | GamingZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-logo">ORION</div>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="main-container">
+    <h1 class="noticias-header">Noticias del Mundo Gaming</h1>
+    <section class="noticias-grid">
+      <!-- Noticia 1 -->
+      <article class="noticia-card">
+        <img class="noticia-img" src="imagenes/ELDEN RING.jpg" alt="Elden Ring DLC">
+        <div class="noticia-content">
+          <div>
+            <div class="noticia-titulo">¡Elden Ring: Shadow of the Erdtree ya disponible!</div>
+            <div class="noticia-meta">Bandai Namco | 29 Jun 2025</div>
+            <div class="noticia-desc">
+              El esperado DLC de Elden Ring expande el mundo con nuevas zonas, jefes y secretos. Los jugadores ya exploran la Tierra de las Sombras y comparten sus primeras impresiones.
+            </div>
+          </div>
+          <a class="noticia-link" href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">Leer más</a>
+        </div>
+      </article>
+      <!-- Noticia 2 -->
+      <article class="noticia-card">
+        <img class="noticia-img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="Counter-Strike 2">
+        <div class="noticia-content">
+          <div>
+            <div class="noticia-titulo">Counter-Strike 2 rompe récords de jugadores</div>
+            <div class="noticia-meta">Valve | 28 Jun 2025</div>
+            <div class="noticia-desc">
+              El shooter competitivo alcanza un nuevo pico histórico de usuarios simultáneos tras su última actualización, que incluye nuevos mapas y mejoras gráficas.
+            </div>
+          </div>
+          <a class="noticia-link" href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">Leer más</a>
+        </div>
+      </article>
+      <!-- Noticia 3 -->
+      <article class="noticia-card">
+        <img class="noticia-img" src="imagenes/Final Fantasy VII Rebirth.webp" alt="Final Fantasy VII Rebirth">
+        <div class="noticia-content">
+          <div>
+            <div class="noticia-titulo">Final Fantasy VII Rebirth: ¡Nuevo tráiler y fecha!</div>
+            <div class="noticia-meta">Square Enix | 27 Jun 2025</div>
+            <div class="noticia-desc">
+              Square Enix revela un espectacular tráiler y confirma la fecha de lanzamiento de la esperada segunda parte del remake de FFVII para PS5.
+            </div>
+          </div>
+          <a class="noticia-link" href="https://www.playstation.com/es-es/games/final-fantasy-vii-rebirth/" target="_blank">Leer más</a>
+        </div>
+      </article>
+      <!-- Noticia 4 -->
+      <article class="noticia-card">
+        <img class="noticia-img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg" alt="Dota 2">
+        <div class="noticia-content">
+          <div>
+            <div class="noticia-titulo">Dota 2 anuncia The International 2025 en Tokio</div>
+            <div class="noticia-meta">Valve | 26 Jun 2025</div>
+            <div class="noticia-desc">
+              El torneo más grande de esports se celebrará por primera vez en Japón, prometiendo un espectáculo sin precedentes para los fans de Dota 2.
+            </div>
+          </div>
+          <a class="noticia-link" href="https://www.dota2.com/international/overview/" target="_blank">Leer más</a>
+        </div>
+      </article>
+      <!-- Noticia 5 -->
+      <article class="noticia-card">
+        <img class="noticia-img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA VI">
+        <div class="noticia-content">
+          <div>
+            <div class="noticia-titulo">GTA VI: Rockstar revela gameplay y detalles</div>
+            <div class="noticia-meta">Rockstar Games | 25 Jun 2025</div>
+            <div class="noticia-desc">
+              El primer gameplay oficial de GTA VI muestra una ciudad vibrante, nuevas mecánicas y confirma su lanzamiento para 2026 en consolas y PC.
+            </div>
+          </div>
+          <a class="noticia-link" href="https://www.rockstargames.com/" target="_blank">Leer más</a>
+        </div>
+      </article>
+      <!-- Noticia 6 -->
+      <article class="noticia-card">
+        <img class="noticia-img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2">
+        <div class="noticia-content">
+          <div>
+            <div class="noticia-titulo">Red Dead Redemption 2 recibe actualización sorpresa</div>
+            <div class="noticia-meta">Rockstar Games | 24 Jun 2025</div>
+            <div class="noticia-desc">
+              Rockstar lanza una actualización gratuita con nuevas misiones y mejoras gráficas para uno de los juegos más aclamados de la última década.
+            </div>
+          </div>
+          <a class="noticia-link" href="https://www.rockstargames.com/reddeadredemption2" target="_blank">Leer más</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes/logo orion.png" alt="GamingZone Logo" style="height:50px;">
+        <h3>ORION</h3>
+        <p>Tu tienda gamer de confianza</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="moviles.html">Móviles</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="detalle-noticia.html">Noticias</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><span style="color:#3B82F6;">Email:</span> orion.tienda@gmail.com</p>
+      <p><span style="color:#3B82F6;">Tel:</span> +507 6712-8248</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ORION. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - ORION</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', Arial, sans-serif;
+      background: 
+        url('imagenes/FONDO.jpg') center center/cover no-repeat,
+        linear-gradient(120deg, #23232b 60%, #18181b 100%);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+    .computer-bg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -55%);
+      width: 340px;
+      height: 220px;
+      background: url('imagenes/computer.png') center center/contain no-repeat;
+      opacity: 0.18;
+      z-index: 1;
+      pointer-events: none;
+      filter: blur(0.5px);
+    }
+    .login-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 36px 28px 28px 28px;
+      border-radius: 18px;
+      box-shadow: 0 8px 40px #00fff733, 0 2px 12px #0005;
+      background: rgba(24,24,27,0.55);
+      backdrop-filter: blur(16px) saturate(160%);
+      border: 1.5px solid #00fff7aa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: crystalIn 1s cubic-bezier(.77,0,.18,1) both;
+    }
+    @keyframes crystalIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(40px);}
+      100% { opacity: 1; transform: scale(1) translateY(0);}
+    }
+    .login-container h2 {
+      color: #00fff7;
+      font-family: 'Orbitron', Arial, sans-serif;
+      margin-bottom: 18px;
+      text-shadow: 0 0 8px #3B82F6;
+      letter-spacing: 2px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .login-container label {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      text-shadow: 0 0 6px #00fff7aa;
+      font-size: 1em;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1.5px solid #00fff7;
+      background: rgba(35,35,43,0.85);
+      color: #fff;
+      font-size: 1em;
+      outline: none;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+      box-shadow: 0 0 8px #00fff733;
+    }
+    .login-container input:focus {
+      border-color: #ff00cc;
+    }
+    .login-container button {
+      width: 100%;
+      background: linear-gradient(90deg, #00fff7 0%, #3B82F6 100%);
+      color: #18181b;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 0;
+      font-size: 1.1em;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 0 12px #00fff7aa;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+    .login-container button:hover {
+      background: linear-gradient(90deg, #ff00cc 0%, #00fff7 100%);
+      color: #fff;
+      transform: scale(1.03);
+    }
+    .login-container .extra-links {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.95em;
+      margin-top: 8px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .login-container .extra-links a {
+      color: #00fff7;
+      text-decoration: none;
+      transition: color 0.2s;
+      margin-bottom: 4px;
+    }
+    .login-container .extra-links a:hover {
+      color: #ff00cc;
+      text-decoration: underline;
+    }
+    .login-container .alerta {
+      width: 100%;
+      margin-top: 65px;
+      padding: 10px 0;
+      border-radius: 8px;
+      background: #23232b;
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 0 8px #00fff7aa;
+      text-align: center;
+      display: none;
+      font-size: 1em;
+    }
+    .login-container .alerta.error {
+      background: #ff0033cc;
+      color: #fff;
+      display: block;
+    }
+    .login-container .alerta.exito {
+      background: #14ff72cb;
+      color: #18181b;
+      display: block;
+    }
+    @media (max-width: 700px) {
+      html, body {
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+        min-height: 100vh;
+      }
+      .computer-bg {
+        width: 220px;
+        height: 120px;
+      }
+      .login-container {
+        max-width: 98vw;
+        padding: 22px 4vw;
+        margin: 40px 0;
+      }
+    }
+    @media (max-width: 400px) {
+      .login-container {
+        padding: 12px 2vw;
+      }
+      .login-container h2 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <div class="computer-bg"></div>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm" autocomplete="off">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required placeholder="Tu usuario" />
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required placeholder="Contraseña" />
+
+      <button type="submit">Entrar</button>
+      <div class="alerta" id="loginMensaje" role="alert" aria-live="polite"></div>
+    </form>
+    <div class="extra-links">
+      <a href="olvidaste.html">¿Olvidaste tu contraseña?</a>
+      <a href="crear-cuenta.html">Crear cuenta</a>
+    </div>
+  </div>
+  <script>
+  // Mostrar el nombre del usuario logueado en el icono de cuenta del menú (si existe)
+  document.addEventListener('DOMContentLoaded', function() {
+    const usuario = localStorage.getItem('usuarioLogueado');
+    const cuentaLinks = document.querySelectorAll('.main-nav a[aria-label="Iniciar sesión"], .main-nav a[aria-label="Mi cuenta"]');
+    if (usuario && cuentaLinks.length > 0) {
+      cuentaLinks.forEach(link => {
+        // Busca el span del icono y añade el nombre al lado
+        let nombreSpan = link.querySelector('.nombre-usuario');
+        if (!nombreSpan) {
+          nombreSpan = document.createElement('span');
+          nombreSpan.className = 'nombre-usuario';
+          nombreSpan.style.marginLeft = '6px';
+          nombreSpan.style.fontWeight = 'bold';
+          nombreSpan.style.color = '#00fff7';
+          link.appendChild(nombreSpan);
+        }
+        nombreSpan.textContent = usuario;
+      });
+    }
+  });
+
+  // Simulación de login
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const usuario = document.getElementById('usuario').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const mensaje = document.getElementById('loginMensaje');
+    mensaje.style.display = 'block';
+    mensaje.className = 'alerta';
+    mensaje.textContent = 'Verificando...';
+    setTimeout(() => {
+      if(usuario === "admin" && password === "1234") {
+        mensaje.className = 'alerta exito';
+        mensaje.textContent = '¡Bienvenido, ' + usuario + '!';
+        // Guarda el usuario en localStorage para mostrarlo en el icono de cuenta
+        localStorage.setItem('usuarioLogueado', usuario);
+        setTimeout(() => window.location.href = "cuenta.html", 1200);
+      } else {
+        mensaje.className = 'alerta error';
+        mensaje.textContent = 'Usuario o contraseña incorrectos.';
+      }
+    }, 1200);
+  });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

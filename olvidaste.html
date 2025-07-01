@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperar Contraseña - ORION</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    .login-container {
+      max-width: 370px;
+      margin: 60px auto 0 auto;
+      padding: 32px 24px 28px 24px;
+      border-radius: 18px;
+      background: rgba(24,24,27,0.88);
+      box-shadow: 0 8px 40px #00fff733, 0 2px 12px #0005;
+      backdrop-filter: blur(12px) saturate(160%);
+      border: 1.5px solid #00fff7aa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      animation: crystalIn 1s cubic-bezier(.77,0,.18,1) both;
+    }
+    @keyframes crystalIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(40px);}
+      100% { opacity: 1; transform: scale(1) translateY(0);}
+    }
+    .login-container h2 {
+      color: #00fff7;
+      font-family: 'Orbitron', Arial, sans-serif;
+      margin-bottom: 18px;
+      text-shadow: 0 0 8px #3B82F6;
+      letter-spacing: 2px;
+      font-size: 1.3em;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .login-container label {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      text-shadow: 0 0 6px #00fff7aa;
+      font-size: 1em;
+    }
+    .login-container input[type="email"] {
+      width: 100%;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1.5px solid #00fff7;
+      background: rgba(35,35,43,0.85);
+      color: #fff;
+      font-size: 1em;
+      outline: none;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+      box-shadow: 0 0 8px #00fff733;
+    }
+    .login-container input:focus {
+      border-color: #ff00cc;
+    }
+    .login-container button {
+      width: 100%;
+      background: linear-gradient(90deg, #00fff7 0%, #3B82F6 100%);
+      color: #18181b;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 0;
+      font-size: 1.1em;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 0 12px #00fff7aa;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+      margin-top: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .login-container button:hover {
+      background: linear-gradient(90deg, #ff00cc 0%, #00fff7 100%);
+      color: #fff;
+      transform: scale(1.03);
+    }
+    .login-container .alerta {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 0;
+      border-radius: 8px;
+      background: #23232b;
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 0 8px #00fff7aa;
+      text-align: center;
+      display: none;
+      font-size: 1em;
+    }
+    .login-container .alerta.exito {
+      background: #14ff72cb;
+      color: #18181b;
+      display: block;
+    }
+    .extra-links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 0.97em;
+      margin-top: 8px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .extra-links a {
+      color: #00fff7;
+      text-decoration: none;
+      transition: color 0.2s;
+      margin-bottom: 4px;
+    }
+    .extra-links a:hover {
+      color: #ff00cc;
+      text-decoration: underline;
+    }
+    @media (max-width: 500px) {
+      .login-container {
+        max-width: 98vw;
+        padding: 16px 2vw;
+      }
+      .login-container h2 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>
+      <span class="material-symbols-outlined" style="font-size:1.2em;vertical-align:middle;">lock_reset</span>
+      Recuperar Contraseña
+    </h2>
+    <form id="recuperarForm" autocomplete="off">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required placeholder="Tu correo" />
+      <button type="submit">
+        <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">send</span>
+        Enviar enlace
+      </button>
+      <div class="alerta" id="recuperarMensaje"></div>
+    </form>
+    <div class="extra-links">
+      <a href="login.html">Volver al login</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById('recuperarForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('recuperarMensaje').textContent = "Si el correo existe, recibirás un enlace para restablecer tu contraseña.";
+      document.getElementById('recuperarMensaje').className = "alerta exito";
+    });
+  </script>
+</body>
+</html>

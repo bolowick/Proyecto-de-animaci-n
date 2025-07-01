@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORION - Ofertas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-logo">ORION</div>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <header class="main-header">
+  <div class="logo">ORION</div>
+  <nav class="main-nav" role="navigation" aria-label="Menú principal">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">home</span>
+          Inicio
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="tienda.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">storefront</span>
+          Tienda
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="moviles.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">smartphone</span>
+              Móviles y Tablets
+            </a>
+          </li>
+          <li>
+            <a href="pcgaming.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">computer</span>
+              PC Gaming
+            </a>
+          </li>
+          <li>
+            <a href="videojuegos.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">sports_esports</span>
+              Videojuegos
+            </a>
+          </li>
+          <li>
+            <a href="ofertas.html">
+              <span class="material-symbols-outlined" style="font-size:1.1em;vertical-align:middle;">local_offer</span>
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="comunidad.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">groups</span>
+          Comunidad
+        </a>
+      </li>
+      <li>
+        <a href="detalle-noticia.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">newspaper</span>
+          Noticia
+        </a>
+      </li>
+      <li>
+        <a href="nosotros.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">info</span>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">mail</span>
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="carrito.html" aria-label="Ver carrito">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">shopping_cart</span>
+          <span id="carrito-contador">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html" aria-label="Iniciar sesión">
+          <span class="material-symbols-outlined" style="font-size:1.3em;vertical-align:middle;">account_circle</span>
+          Cuenta
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="main-container">
+    <section class="ofertas">
+      <h2>🔥 Ofertas Especiales</h2>
+      <p class="ofertas-desc">¡Aprovecha descuentos únicos por tiempo limitado en productos seleccionados!</p>
+      <div class="producto-lista">
+        <!-- Producto 1 -->
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Teclado Razer BlackWidow V3.jpg" alt="Teclado Razer BlackWidow V3"/>
+            <div class="info-producto">
+              <h3>Teclado Razer BlackWidow V3</h3>
+              <p>Mecánico, RGB, Switches Green</p>
+              <span class="precio">
+                <span class="precio-oferta">$89.99</span>
+                <s class="precio-original">$119.99</s>
+              </span>
+              <button class="agregar-carrito" data-id="101" data-nombre="Teclado Razer BlackWidow V3" data-precio="89.99">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <!-- Producto 2 -->
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Combo Gaming Logitech.jpg" alt="Combo Gaming Logitech"/>
+            <div class="info-producto">
+              <h3>Combo Gaming Logitech</h3>
+              <p>Mouse + Teclado + Headset</p>
+              <span class="precio">
+                <span class="precio-oferta">$149.99</span>
+                <s class="precio-original">$174.99</s>
+              </span>
+              <button class="agregar-carrito" data-id="102" data-nombre="Combo Gaming Logitech" data-precio="149.99">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+        <!-- Producto 3 -->
+        <article class="producto">
+          <div class="imagen-producto">
+            <img src="imagenes/Monitor ASUS TUF Gaming 165Hz.jpg" alt="Monitor ASUS TUF Gaming 165Hz"/>
+            <div class="info-producto">
+              <h3>Monitor ASUS TUF Gaming 165Hz</h3>
+              <p>27", 1ms, G-Sync Compatible</p>
+              <span class="precio">
+                <span class="precio-oferta">$229.00</span>
+                <s class="precio-original">$289.00</s>
+              </span>
+              <button class="agregar-carrito" data-id="103" data-nombre="Monitor ASUS TUF" data-precio="229.00">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes/logo orion.png" alt="orion Logo" style="height:50px;">
+        <h3>ORION</h3>
+        <p>Tu tienda gamer de confianza</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="detalle-noticia.html">Noticias</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><span style="color:#3B82F6;">Email:</span> orion.tienda@gmail.com</p>
+        <p><span style="color:#3B82F6;">Tel:</span> +507 6712-8248</p>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><img src="imagenes/instagram.svg" alt="Instagram" /></a>
+          <a href="#" title="Facebook"><img src="imagenes/facebook.svg" alt="Facebook" /></a>
+          <a href="#" title="Twitter"><img src="imagenes/twitter.svg" alt="Twitter" /></a>
+          <a href="#" title="YouTube"><img src="imagenes/youtube.svg" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ORION. Todos los derechos reservados.</p>
+      <p>Desarrollado por <a href="#">TuNombre</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
